@@ -111,7 +111,7 @@ masukkan password yang didapatkan
 ## Soal 11
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ### Cara Pengerjaan
-Lakukan pengambilan paket dengan protokol `tcp`, direction `src`, type `port`, isi dengan `port 80`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+Lakukan pengambilan paket dengan protokol `tcp`, direction `src`, type `port`, isi dengan `port 80`. Yang berarti menangkap semua paket dengan protokol TCP yang berasal dari `port 80`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark capture filter expression:
 ```
@@ -130,7 +130,7 @@ Output:
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### Cara Pengerjaan
-Lakukan pengambilan paket dengan type `port`, isi dengan `port 21`, tanpa protokol dan direction. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+Lakukan pengambilan paket dengan type `port`, isi dengan `port 21`, tanpa protokol dan direction. Yang berarti menangkap semua paket yang menuju atau berasal dari `port 21`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
 ```
@@ -142,7 +142,7 @@ Output:
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ### Cara Pengerjaan
-Lakukan pengambilan paket dengan direction `dst`, type `port`, isi dengan `port 443`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+Lakukan pengambilan paket dengan direction `dst`, type `port`, isi dengan `port 443`, tanpa protokol. Yang berarti menangkap semua paket yang menuju ke `port 443`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
 ```
@@ -154,7 +154,7 @@ Output:
 ## Soal 14
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 ### Cara Pengerjaan
-Lakukan pengambilan paket dengan direction `dst`, type `host`, isi dengan `host kemenag.go.id`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+Lakukan pengambilan paket dengan direction `dst`, type `host`, isi dengan `host kemenag.go.id`, tanpa protokol. Yang berarti menangkap semua paket yang spesifik menuju ke alamat `kemenag.go.id`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
 ```
@@ -176,7 +176,7 @@ Output:
 
 Terlihat pada Wireless LAN adapter Wi-FI didapatkan IPv4 Address: `192.168.1.6`. Simpan IP address ini untuk mengambil paket dari IP address tersebut.
 
-Lakukan pengambilan paket dengan direction `src`, type `host`, isi dengan `host 192.168.1.6`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+Lakukan pengambilan paket dengan direction `src`, type `host`, isi dengan `host 192.168.1.6`, tanpa protokol. Yang berarti menangkap semua paket yang spesifik berasal dari alamat `192.168.1.6`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
 ```
