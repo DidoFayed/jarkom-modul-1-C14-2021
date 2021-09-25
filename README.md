@@ -9,22 +9,83 @@ Praktikum Jaringan Komputer Modul 1 - Crimping dan Wireshark
 ## Soal 1
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 ### Cara Pengerjaan
+Wireshark filter expression : 
+```
+http.host == "ichimarumaru.tech"
+```
+Maka akan muncul hasil dari display filternya :
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/1_1_Filter.png)
+
+Kemudian klik follow tcp stream pada paket “GET / HTTP/1.1”, dan akan muncul pop up seperti berikut.
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/1_2_TCP.png)
+
+Berdasarkan hasil filter tersebut, didapatkan untuk host ichimarumaru.tech menggunakan webserver nginx/1.18.0 (Ubuntu).
 
 ## Soal 2
 Temukan paket dari web-web yang menggunakan basic authentication method!
 ### Cara Pengerjaan
+Wireshark filter expression : 
+```
+http.authbasic
+```
+Maka akan muncul hasil dari display filternya :
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/2_1.png)
+
+Paket dari web-web tersebut menggunakan basic authentication method.
 
 ## Soal 3
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ### Cara Pengerjaan
+Wireshark filter expression :
+```
+http.host contains "basic.ichimarumaru.tech"
+```
+Memilih salah satu paket yang didapatkan, kemudian mengecek Hypertext Transfer Protocolnya
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/3_1_HTTP_Authorization.png)
+
+Pada Tab Authorization didapatkan
+```
+username : kuncimenujulautan
+password : tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
+```
+
+Setelah itu login ke basic.ichimarumaru.tech! menggunakan username dan password tersebut dan menjawab pertanyaan yang ada di sana
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/3_2.png)
 
 ## Soal 4
 Temukan paket mysql yang mengandung perintah query select!
 ### Cara Pengerjaan
+Wireshark filter expression : 
+```
+mysql.command == 3 and frame matches “select”
+```
+Maka akan muncul hasil dari display filternya :
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/4_1.jpg)
+
+Berdasarkan hasil filter tersebut, didapatkan 3 paket mysql yang mengandung perintah query select.
 
 ## Soal 5
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 ### Cara Pengerjaan
+Wireshark filter expression :
+```
+mysql contains “insert” || mysql contains “INSERT”
+```
+Maka akan muncul hasil dari display filternya :
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/5_1_Filter.png)
+
+Kemudian klik follow tcp stream pada paket yang didapatkan, show data as ASCII dan akan muncul pop up seperti berikut.
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/5_2_ASCII.png)
+
+Berdasarkan paket tersebut, didapatkan :
+```
+username : akakanomi
+password : pemisah4lautan
+```
+
+Setelah itu login ke portal.ichimarumaru.tech menggunakan username dan password tersebut dan menjawab pertanyaan yang ada di sana
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/5_3_Login.png)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/5_4_Website.png)
 
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server!
