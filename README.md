@@ -111,11 +111,16 @@ masukkan password yang didapatkan
 ## Soal 11
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ### Cara Pengerjaan
-Wireshark filter expression untuk capture filter:
+Lakukan pengambilan paket dengan protokol `tcp`, direction `src`, type `port`, isi dengan `port 80`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+
+Wireshark capture filter expression:
 ```
 tcp src port 80
 ```
-Wireshark filter expression:
+
+Selanjutnya, lakukan pemilahan paket yang akan ditampilkan dari kumpulan paket yang telah ditangkap. Tulis display filter dengan protokol `tcp`, field `port`, comparison operator `==`, dan value `80`.
+
+Wireshark display filter expression:
 ```
 tcp.port == 80
 ```
@@ -125,6 +130,8 @@ Output:
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### Cara Pengerjaan
+Lakukan pengambilan paket dengan type `port`, isi dengan `port 21`, tanpa protokol dan direction. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+
 Wireshark filter expression untuk capture filter:
 ```
 port 21
@@ -135,6 +142,8 @@ Output:
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ### Cara Pengerjaan
+Lakukan pengambilan paket dengan direction `dst`, type `port`, isi dengan `port 443`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+
 Wireshark filter expression untuk capture filter:
 ```
 dst port 443
@@ -145,12 +154,15 @@ Output:
 ## Soal 14
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 ### Cara Pengerjaan
+Lakukan pengambilan paket dengan direction `dst`, type `host`, isi dengan `host kemenag.go.id`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
+
 Wireshark filter expression untuk capture filter:
 ```
 dst host kemenag.go.id
 ```
 Output:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/14_1.png)
+
 
 ## Soal 15
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
@@ -163,6 +175,8 @@ Output:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_1_CheckIP.png)
 
 Terlihat pada Wireless LAN adapter Wi-FI didapatkan IPv4 Address: `192.168.1.6`. Simpan IP address ini untuk mengambil paket dari IP address tersebut.
+
+Lakukan pengambilan paket dengan direction `src`, type `host`, isi dengan `host 192.168.1.6`, tanpa protokol. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
 ```
