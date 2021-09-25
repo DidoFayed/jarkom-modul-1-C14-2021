@@ -61,7 +61,8 @@ ftp-data.command contains “history.txt”,
 ``` 
 akan muncul tampilan packet sebagai berikut: 
 <br>
-![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/110_1_Filter_History.jpg)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_1_Filter_History.png)
+<br>
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_2_ASCII.png)
 
 Didapati password ada di dalam `bukanapaapa.txt`  
@@ -81,7 +82,7 @@ Output:
 <br>
 Buka file zip yang sudah diunduh sebelumnya lalu
 masukkan password yang didapatkan
-![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_5_Open ZIP.png)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_5_Open_ZIP.png)
 <br> Output pdf:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_6_PDF.png)
 
