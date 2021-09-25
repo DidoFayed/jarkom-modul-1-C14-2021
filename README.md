@@ -2,9 +2,9 @@
 Praktikum Sistem Operasi Modul 1 - Crimping dan Wireshark
 
 ### Nama Anggota Kelompok:
-<br> 5111940000059      Dido Fabian Fayed 
-<br> 5111940000074	    Nur Ahmad Khatim 
-<br> 5111940000162	    Ramadhan Arif Hardiansyah
+1. 5111940000059      Dido Fabian Fayed <br>
+2. 5111940000074	    Nur Ahmad Khatim <br>
+3. 5111940000162	    Ramadhan Arif Hardiansyah
 
 ## Soal 1
 
