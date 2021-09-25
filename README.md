@@ -191,6 +191,13 @@ Output:
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### Cara Pengerjaan
+Pertama-tama start FileZilla melalui XAMPP Control Panel. Kemudian membuat user (dalam soal ini usernya tanpa passwod). Setelah itu buka MyComputer dan pada tab directory masukkan :
+```
+ftp://192.168.1.5
+```
+Sesuai IP Address pengguna.
+Setelah itu login menggunakan username dan password dari user yang telah dibuat sebelumnya.
+Selanjutnya jalankan wireshark seperti instruksi berikut.
 Lakukan pengambilan paket dengan type `port`, isi dengan `port 21`, tanpa protokol dan direction. Yang berarti menangkap semua paket yang menuju atau berasal dari `port 21`. Paket yang tidak memenuhi kriteria ini akan dibiarkan lewat tanpa ditangkap.
 
 Wireshark filter expression untuk capture filter:
