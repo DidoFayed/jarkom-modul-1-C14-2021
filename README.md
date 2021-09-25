@@ -1,4 +1,4 @@
-# jarkom-modul-1-C14-2021
+# Jarkom-Modul-1-C14-2021
 
 ## Nama Anggota Kelompok:
 <br> 5111940000059	    Dido Fabian Fayed 
