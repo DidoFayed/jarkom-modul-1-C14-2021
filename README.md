@@ -70,7 +70,7 @@ Output:
 
 Masukkan password yang didapatkan
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_5_Open ZIP.png)
-Output pdf:
+ Output pdf:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_6_PDF.png)
 
 
