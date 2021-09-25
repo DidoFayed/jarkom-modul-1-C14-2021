@@ -63,18 +63,51 @@ Output:
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### Cara Pengerjaan
+Wireshark filter expression untuk capture filter:
+```
+port 21
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/12_1.png)
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ### Cara Pengerjaan
+Wireshark filter expression untuk capture filter:
+```
+dst port 443
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/13_1.png)
 
 ## Soal 14
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 ### Cara Pengerjaan
+Wireshark filter expression untuk capture filter:
+```
+dst host kemenag.go.id
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/14_1.png)
 
 ## Soal 15
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 ### Cara Pengerjaan
+Buka Command Prompt, ketik `ipconfig` dan tekan enter
+```
+ipconfig
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_1.png)
+
+Terlihat pada Wireless LAN adapter Wi-FI didapatkan IPv4 Address: 192.168.1.6. Simpan IP address ini untuk mengambil paket dari IP address tersebut.
+
+Wireshark filter expression untuk capture filter:
+```
+src host 192.168.1.6
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_2.png)
 
 ## Kendala yang Dialami Selama Pengerjaan
 1. ...
