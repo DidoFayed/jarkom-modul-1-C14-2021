@@ -45,6 +45,34 @@ Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 ## Soal 10
 Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 ### Cara Pengerjaan
+Wireshark filter expression : 
+``` 
+ftp-data.command contains “history.txt”, 
+``` 
+akan muncul tampilan packet sebagai berikut
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/110_1_Filter_History.jpg)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_2_ASCII.png)
+
+Didapati password ada di dalam `bukanapaapa.txt`  
+Wireshark filter expression : 
+```
+ftp-data.command contains “bukanaapa.txt”
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_3_Filter_Bukanaapa.png)
+Follow tcp stream, dan didapatkan password-nya 
+<br> Password
+```
+d1b1langbukanapaapajugagapercaya`
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_4_ASCII.png)
+
+Masukkan password yang didapatkan
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_5_Open ZIP.png)
+Output pdf:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_6_PDF.png)
+
 
 ## Soal 11
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
