@@ -118,7 +118,7 @@ Wireshark capture filter expression:
 tcp src port 80
 ```
 
-Selanjutnya, lakukan pemilahan paket yang akan ditampilkan dari kumpulan paket yang telah ditangkap. Tulis display filter dengan protokol `tcp`, field `port`, comparison operator `==`, dan value `80`.
+Selanjutnya, lakukan pemilahan paket yang akan ditampilkan dari kumpulan paket yang telah ditangkap. Tulis display filter dengan protokol `tcp`, field `port`, comparison operator `==`, dan value `80`. Menampilkan semua paket dengan protokol TCP yang menuju ke atau berasal dari `port 80`.
 
 Wireshark display filter expression:
 ```
