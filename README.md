@@ -98,7 +98,7 @@ Buka Command Prompt, ketik `ipconfig` dan tekan enter
 ipconfig
 ```
 Output:
-![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_1.png)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_1_CheckIP.png)
 
 Terlihat pada Wireless LAN adapter Wi-FI didapatkan IPv4 Address: 192.168.1.6. Simpan IP address ini untuk mengambil paket dari IP address tersebut.
 
@@ -107,7 +107,7 @@ Wireshark filter expression untuk capture filter:
 src host 192.168.1.6
 ```
 Output:
-![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_2.png)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_2_Filter.png)
 
 ## Kendala yang Dialami Selama Pengerjaan
 1. ...
