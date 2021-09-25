@@ -30,16 +30,18 @@ Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan passw
 Cari username dan password ketika melakukan login ke FTP Server!
 ### Cara Pengerjaan
 Wireshark filter expression : 
-```ftp.request.command == PASS || ftp.request.command == USER
 ```
-Maka akan muncul packet sebaga yang berisi `username` dan `password` yang digunakan untuk melakukan login ke FTP server
+ftp.request.command == PASS || ftp.request.command == USER
+```
+Maka akan muncul packet yang berisi `username` dan `password` yang digunakan untuk melakukan login ke FTP server
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/6_1.png)
 
 ## Soal 7
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 ### Cara Pengerjaan
 Wireshark filter expression : 
-```ftp-data contains Real.pdf
+```
+ftp-data contains Real.pdf
 ```
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/7_1_Filter.png)
 Show data as `Raw` lalu simpan sebagai file (save as) `.pdf`
@@ -56,7 +58,8 @@ Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 ### Cara Pengerjaan
 Wireshark filter expression : 
-```ftp-data.command contains “secret.zip”
+```
+ftp-data.command contains “secret.zip”
 ```
 akan muncul tampilan seperti berikut:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/9_1_Filter.png)
