@@ -52,7 +52,12 @@ Buka file `.pdf` yang sudah disimpan
 ## Soal 8
 Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 ### Cara Pengerjaan
-
+Wireshark filter expression : 
+```
+ftp.command == RETR
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/8_RETR.png)
 
 ## Soal 9
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
@@ -77,7 +82,7 @@ ftp-data.command contains “history.txt”,
 ``` 
 akan muncul tampilan packet sebagai berikut: 
 <br>
-![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_1_Filter_History.png)
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_1_Filter_Historytxt.png)
 <br>
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_2_ASCII.png)
 
