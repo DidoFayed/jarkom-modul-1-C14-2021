@@ -254,5 +254,5 @@ Output:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/15_2_Filter.png)
 
 ## Kendala yang Dialami Selama Pengerjaan
-1. ...
+1. Pengerjaan Soal No. 12 awalnya menggunakan capture filter pada Wi-Fi, sehingga tidak mendapatkan apa-apa untuk port 21. Dan juga pengerjaan menggunakan FileZilla Client tidak dapat menangkap user localhost akhirnya menggunakan windows dan capture filter Adapter for loopback traffic capture.
 2. ...
