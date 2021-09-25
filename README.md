@@ -38,9 +38,19 @@ Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..
 Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 ### Cara Pengerjaan
 
+
 ## Soal 9
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 ### Cara Pengerjaan
+Wireshark filter expression : 
+```ftp-data.command contains “secret.zip”
+```
+akan muncul tampilan seperti berikut:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/9_1_Filter.png)
+Show data as `Raw` lalu simpan sebagai file (save as) `.zip`
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/9_2_Raw.png)
+Maka file sudah terunduh namun kita masih diminta untuk mendapatkan password untuk membukanya
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/9_3_ZIP.png)
 
 ## Soal 10
 Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
@@ -49,7 +59,8 @@ Wireshark filter expression :
 ``` 
 ftp-data.command contains “history.txt”, 
 ``` 
-akan muncul tampilan packet sebagai berikut
+akan muncul tampilan packet sebagai berikut: 
+<br>
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/110_1_Filter_History.jpg)
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_2_ASCII.png)
 
@@ -67,10 +78,11 @@ d1b1langbukanapaapajugagapercaya`
 ```
 Output:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_4_ASCII.png)
-
-Masukkan password yang didapatkan
+<br>
+Buka file zip yang sudah diunduh sebelumnya lalu
+masukkan password yang didapatkan
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_5_Open ZIP.png)
- Output pdf:
+<br> Output pdf:
 ![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/10_6_PDF.png)
 
 
