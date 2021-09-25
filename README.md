@@ -49,6 +49,16 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 ## Soal 11
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ### Cara Pengerjaan
+Wireshark filter expression untuk capture filter:
+```
+tcp src port 80
+```
+Wireshark filter expression:
+```
+tcp.port == 80
+```
+Output:
+![ssmodul1](https://github.com/DidoFayed/jarkom-modul-1-C14-2021/blob/main/ssmodul1/11_1.png)
 
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
