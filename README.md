@@ -2,9 +2,9 @@
 Praktikum Jaringan Komputer Modul 1 - Crimping dan Wireshark
 
 ### Nama Anggota Kelompok:
-1. 5111940000059      Dido Fabian Fayed <br>
-2. 5111940000074	    Nur Ahmad Khatim <br>
-3. 5111940000162	    Ramadhan Arif Hardijansyah
+1. 05111940000059     Dido Fabian Fayed <br>
+2. 05111940000074	    Nur Ahmad Khatim <br>
+3. 05111940000162	    Ramadhan Arif Hardijansyah
 
 ## Soal 1
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
